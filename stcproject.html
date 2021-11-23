@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STC Project</title>
+    <style>
+        body{
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+        .container{
+            border-radius: 25px;
+            background-color: silver;
+            width: 80%;
+            margin-inline: auto;
+            padding: 2rem;
+            display:flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content:space-around;
+        }
+        .button {
+            background-color: #2950b9;
+            border: none;
+            color: white;
+            border-radius: 25px;
+            padding: 15px 32px;
+            font-size: 16px;
+        }
+        .Flex1, .Flex2{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            width:30%;
+            text-align: center;
+        }
+        .button2 {
+            background-color: #a6b3d3;
+            border: none;
+            color: black;
+            border-radius: 25px;
+            padding: 15px 32px; 
+            font-size: 16px;
+            vertical-align: bottom;
+            margin:auto;
+            ;
+        }
+        @media (min-width:700px) {
+        .button2 {
+            display:none
+        }   
+        }
+        @media (max-width: 700px) {
+        .Flex2, .button {
+            display:none;
+        }
+        .Flex1, .button2{
+            width: auto;
+            align-self: center;
+            display:block
+        }
+        .container{
+            background-color: white;    
+        }
+    }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="Flex1">
+            <h1 class="h1">Looking to Host your Venue?</h1>
+            <h5>Use our space platform to host your venue and earn extra opportunities 
+                by sharing your space
+            </h5>
+            <button class="button">Start Hosting</button>
+            <button class="button2">Learn More</button>
+        </div>
+        <div class="Flex2">
+            <div class="Paragraph">
+                <h3>Free Listings</h3>
+                <h5>List your space for free on Spacebender</h5>
+            <div class="Paragraph">
+                <h3>Management Systems</h3>
+                <h5>Advance tools to handle all your booking</h5>
+            <div class="Paragraph">
+                <h3>No Comissions</h3>
+                <h5>No incurrent costs per booking</h5>                        
+            </div>
+        </div>
+    </div>
+</body>
+</html>
